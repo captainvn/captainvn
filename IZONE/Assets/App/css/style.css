@@ -2906,3 +2906,21 @@ ul.menu-step h3 {
 .dh-gv-item .ps-relative {
     border: 1px solid rgba(158, 158, 158, .25);
 }
+input[type="date"].use-placeholder{
+    display: flex;
+    align-items: center;
+}
+input[type="date"].use-placeholder:focus:before,
+input[type="date"].use-placeholder:valid:before {
+    content: "";
+}
+input[type="date"].use-placeholder:before {
+    content: attr(placeholder) !important;
+    color: #8898aa;
+    margin-right: 3px;
+}
+.izone-timer-img {
+    max-height: 250px;
+    margin: 0 auto;
+    display: block;
+}

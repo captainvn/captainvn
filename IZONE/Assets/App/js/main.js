@@ -63,7 +63,7 @@ function sticky_header() {
 //--DOCUMENT READY FUNCTION BEGIN
 jQuery(document).ready(function() {
     if(jQuery('.cookie-popup-wrap').length!=0){
-        show_popup();
+        //show_popup();
     }
     function makeTimer() {
 
@@ -120,19 +120,33 @@ jQuery(document).ready(function() {
         jQuery(this).next('.pr-pic').slideToggle();
     });
 
-
+    var id_count = 0;
     jQuery('.video-youtube').each(function() {
         var id = jQuery(this).attr('data-url').split('watch?v=')[1];
         var hq = 'http://i3.ytimg.com/vi/' + id + '/hqdefault.jpg';
         var hd = 'http://i3.ytimg.com/vi/' + id + '/maxresdefault.jpg';
         jQuery(this).find('.youtube-thumb img').attr('src', hd);
+        jQuery(this).find('.youtube-thumb').attr('id', 'youtube_item_'+id_count);
+        id_count++;
     });
+
+
+
+
+
+
     jQuery(document).on('click', '.youtube-thumb', function(e) {
         e.preventDefault();
-        var id = jQuery(this).closest('.video-youtube').attr('data-url').split('watch?v=')[1];
-        var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + id + '?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        var id = jQuery(this).attr('id');
+        var youtube_id = jQuery(this).closest('.video-youtube').attr('data-url').split('watch?v=')[1];
+        var iframe = '<iframe id="iframe_'+id+'" width="560" height="315" src="https://www.youtube.com/embed/' + youtube_id + '?enablejsapi=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         jQuery(this).addClass('active');
         jQuery(this).find('.thumb-ratio').html(iframe);
+        var div = document.getElementById(id);
+        var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+        document.getElementById("iframe_"+id).onload= function() {
+            iframe.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+        };
     });
 
 
