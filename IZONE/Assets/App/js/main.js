@@ -13,9 +13,56 @@ function body_padding_top() {
     jQuery("#site-content").css("padding-top", parseInt(jQuery("header").outerHeight()));
 
 }
+
+function show_popup() {
+    if ($.cookie('cookie_popup') == undefined) {
+        $('.cookie-popup-wrap').fadeIn(600);
+        $.cookie('cookie_popup', true, {
+            expires: 0 //số ngày hiện lại
+        });
+    };
+    $('#closepopup').click(function(e) {
+        e.preventDefault();
+        $('.cookie-popup-wrap').fadeOut(600);
+    });
+    cookie_popup = (function() {
+        if ($.cookie('cookie_popup') == undefined) {
+            $('.cookie-popup-wrap').fadeIn(600);
+            $.cookie('cookie_popup', true, {
+                expires: 0 //số ngày hiện lại
+            });
+        };
+        $('#closepopup').click(function(e) {
+            e.preventDefault();
+            $('.cookie-popup-wrap').fadeOut(600);
+        });
+    });
+    setTimeout(function() {
+        cookie_popup();
+    }, 1000); //số miligiây hiện popup sau khi vào trang: 1000 = 1s | 3 phút = 180000
+}
+
+//var hT = $('.header-top').offset().top;
+var hT = $('.header-top').outerHeight();
+var hH = $('.header').outerHeight();
+$('.fix-header').css('height', hH);
+function sticky_header() {
+    var wH = $(window).height(),
+        wS = jQuery(window).scrollTop();
+    if (wS > hT) {
+        $('header').addClass('sticky');
+        $('.fix-header').css('display', 'block');
+    } else {
+        $('header').removeClass('sticky');
+        $('.fix-header').css('display', 'none');
+    }
+
+}
+
+
 //--DOCUMENT READY FUNCTION BEGIN
 jQuery(document).ready(function() {
-
+    show_popup();
     function makeTimer() {
 
         //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
@@ -140,6 +187,35 @@ jQuery(document).ready(function() {
             }
         }
     });
+    $("#course-slider").owlCarousel({
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        autoplay: false,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: false,
+        loop: true,
+        dots: true,
+        margin: 24,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 2,
+            },
+            767: {
+                items: 2,
+
+            },
+            991: {
+                items: 3,
+
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
     $("#hs-slider").owlCarousel({
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
@@ -242,6 +318,7 @@ jQuery(window).resize(function() {
 });
 //--WINDOW RESIZE FUNCTION END
 jQuery(window).scroll(function() {
+    sticky_header();
     //Back to top
     if ($(this).scrollTop() > 50) {
         $('.cd-top').addClass('cd-is-visible');
