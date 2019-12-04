@@ -35,6 +35,10 @@
     .account-info:hover .account-menu { top: calc(100% + 2px); visibility: visible; opacity: 1; z-index: 27; }
 }
 @media(max-width:991px) {
+    .theme-footer .top-footer-data-wrapper {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
     .hs-slider-section .owl-prev, .hs-slider-section .owl-next {
         top: 110px !important;
     }
@@ -71,6 +75,9 @@
 
 }
 @media(max-width:767px) {
+    .theme-footer .top-footer-data-wrapper {
+        padding-bottom: 0;
+    }
     .hs-slider-section .owl-prev, .hs-slider-section .owl-next {
         top: 90px !important;
     }
