@@ -129,10 +129,13 @@
 }
 @media (max-width:575px) {
     .gv-slider .owl-nav .owl-next {
-        right: 0;
+        right: 5px;
     }
     .gv-slider .owl-nav .owl-prev {
-        left: 0;
+        left: 5px;
+    }
+    #gv-slider .owl-prev, #gv-slider .owl-next {
+        top: 120px;
     }
 }
 @media(max-width:530px) {
@@ -155,6 +158,13 @@
 }
 @media(max-width:420px) {
 
+}
+@media(max-width:370px) {
+    .dh-gv-item {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
 @media(min-width:421px) and (max-width:575px) {
 
