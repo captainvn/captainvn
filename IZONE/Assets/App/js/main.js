@@ -62,7 +62,9 @@ function sticky_header() {
 
 //--DOCUMENT READY FUNCTION BEGIN
 jQuery(document).ready(function() {
-    show_popup();
+    if(jQuery('.cookie-popup-wrap').length!=0){
+        show_popup();
+    }
     function makeTimer() {
 
         //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
