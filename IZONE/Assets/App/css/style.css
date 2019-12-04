@@ -2374,9 +2374,7 @@ body .text-hover-main:hover{
     justify-content: space-between;
     border-bottom: 1px solid #eee;
 }
-.blue-l {
-    /* border-left: 5px solid #00A8AB; */
-}
+
 .col-study-step .heading h3 {
     margin: 0;
     text-transform: uppercase;
@@ -2411,11 +2409,7 @@ ul.link-seo li a:hover {
     width: 20%;
     float: left;
 }
-.bg-blue {
-    background: #00A8AB !important;
-    padding: 0 !important;
-    min-height: 400px !important;
-}
+
 ul.menu-step {
     font-size: 15px;
     margin-bottom: 0;
@@ -2426,9 +2420,6 @@ ul.menu-step h2 {
     color: #fff;
     font-weight: bold;
     font-size: 14px;
-}
-.txt-blue {
-    color: #00A8AB;
 }
 
 ul.menu-step li {
@@ -2490,53 +2481,64 @@ ul.menu-step li a i {
     color: #CD2228;
 }
 
+.blue-l {
+    /* border-left: 5px solid #00A8AB; */
+}
 .pink-l {
     /* border-left: 5px solid #E40071; */
 }
+.violet-l {
+    /* border-left: 5px solid #80009B; */
+}
+.oranges-l {
+    /* border-left: 5px solid #FF8500; */
+}
+.green-l {
+    /* border-left: 5px solid #004b9a; */
+}
+
+.txt-blue {
+    color: #00A8AB;
+}
 .txt-pink {
     color: #E40071;
+}
+.txt-violet {
+    color: #80009B;
+}
+.txt-oranges {
+    color: #FF8500;
+}
+.txt-green {
+    color: #004b9a;
+}
+.bg-blue {
+    background: #00A8AB !important;
+    padding: 0 !important;
+    min-height: 400px !important;
 }
 .bg-pink {
     background: #E40071 !important;
     padding: 0 !important;
     min-height: 400px !important;
 }
-.violet-l {
-    /* border-left: 5px solid #80009B; */
-}
-.txt-violet {
-    color: #80009B;
-}
-
 .bg-violet {
     background: #80009B !important;
     padding: 0 !important;
     min-height: 400px !important;
 }
-.oranges-l {
-    /* border-left: 5px solid #FF8500; */
-}
-.txt-oranges {
-    color: #FF8500;
-}
-
 .bg-oranges {
     background: #FF8500 !important;
     padding: 0 !important;
     min-height: 400px !important;
 }
-.green-l {
-    /* border-left: 5px solid #004b9a; */
-}
-.txt-green {
-    color: #004b9a;
-}
-
 .bg-green {
     background: #004b9a !important;
     padding: 0 !important;
     min-height: 400px !important;
 }
+
+
 .col-botro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2901,3 +2903,4 @@ ul.menu-step h3 {
     object-fit: contain;
     object-position: left center;
 }
+

@@ -97,6 +97,31 @@
         width: 100%;
         max-width: 100%;
     }
+
+    ul.menu-step h3 {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    ul.menu-step h2 {
+        padding: 12px 15px 8px 15px;
+        font-size: 13px;
+    }
+    ul.menu-step li a {
+        padding: 6px 15px 6px 15px;
+        font-size: 13px;
+    }
+    ul.menu-step {
+        padding-bottom: 9px;
+        overflow: hidden;
+    }
+    .list_hot_post li {
+        padding: 0 7px 24px 7px;
+    }
+    .list_hot_post {
+        padding: 12px 7px 0 7px;
+    }
+
+
 }
 @media(max-width:640px) {
 }
