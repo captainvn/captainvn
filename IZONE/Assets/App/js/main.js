@@ -72,7 +72,7 @@ function check_over() {
 //--DOCUMENT READY FUNCTION BEGIN
 jQuery(document).ready(function() {
     if(jQuery('.cookie-popup-wrap').length!=0){
-        //show_popup();
+        show_popup();
     }
     check_over();
 
