@@ -147,6 +147,9 @@
     #gv-slider .owl-prev, #gv-slider .owl-next {
         top: 120px;
     }
+    #course-slider .owl-prev, #course-slider .owl-next {
+        top: 150px;
+    }
 }
 @media(max-width:530px) {
 }
@@ -159,6 +162,9 @@
     }
     .hs-slider-section .owl-prev, .hs-slider-section .owl-next {
         top: 110px !important;
+    }
+    #course-slider .owl-prev, #course-slider .owl-next {
+        top: 195px;
     }
     .col-botro li:nth-child(n+5) {
         display: none;
