@@ -59,12 +59,27 @@ function sticky_header() {
 
 }
 
-
+function check_over() {
+    jQuery('.table-responsive').each(function(){
+        var element = jQuery(this)[0];
+        if (element.offsetHeight < element.scrollHeight || element.offsetWidth < element.scrollWidth) {
+            jQuery(this).closest('.table-responsive-parent').addClass('is_overflow');
+        } else {
+            jQuery(this).closest('.table-responsive-parent').removeClass('is_overflow');
+        }
+    });
+}
 //--DOCUMENT READY FUNCTION BEGIN
 jQuery(document).ready(function() {
     if(jQuery('.cookie-popup-wrap').length!=0){
         //show_popup();
     }
+    check_over();
+
+
+
+
+
     function makeTimer() {
 
         //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
@@ -367,6 +382,7 @@ jQuery(window).bind("load", function() {
 //--WINDOW RESIZE FUNCTION BEGIN
 jQuery(window).resize(function() {
     account_clickable();
+    check_over();
     //body_padding_top();
 });
 

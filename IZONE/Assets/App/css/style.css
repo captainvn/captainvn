@@ -3225,5 +3225,17 @@ body .table-sosanh-phuongphap td, body .table-sosanh-phuongphap th {
     vertical-align: top !important;
 }
 .table-sosanh-phuongphap {
-    min-width: 450px;
+    min-width: 500px;
 }
+.table-responsive-parent.is_overflow {
+    position: relative;
+}
+
+.table-responsive-parent.is_overflow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 25%,  rgba(33, 150, 243, .125) 100%);
