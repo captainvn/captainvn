@@ -264,6 +264,38 @@ jQuery(document).ready(function() {
             }
         }
     });
+    $("#phanhoi-slider").owlCarousel({
+        nav: false,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        autoplay: false,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: false,
+        loop: false,
+        dots: true,
+        margin: 12,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 2,
+            },
+            767: {
+                items: 2,
+
+            },
+            991: {
+                items: 3,
+
+            },
+            1200: {
+                items: 3
+            },
+            1366: {
+                items: 3
+            }
+        }
+    });
 
     //Mobile menu new
     function toogle_mobilenav(n) {
@@ -306,6 +338,11 @@ jQuery(document).ready(function() {
     });
 
 
+    jQuery(document).on('click', '.curriculum-chapter', function(){
+        jQuery(this).next('.chapter-lessons').slideToggle();
+    });
+
+
     //Back to top
     $('.cd-top').click(function() {
         $('body,html').animate({
@@ -332,8 +369,51 @@ jQuery(window).resize(function() {
     account_clickable();
     //body_padding_top();
 });
-//--WINDOW RESIZE FUNCTION END
-jQuery(window).scroll(function() {
+
+
+var lastId,
+    topMenu = $("#market-statistics-nav"),
+    topMenuHeight = topMenu.outerHeight() + 100,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function() {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
+menuItems.click(function(e) {
+    var href = $(this).attr("href");
+    var id = href.replace('#', '');
+    jQuery('.scroll-target-item').removeClass('active');
+    jQuery('#' + id).addClass('active');
+    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 100;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop - 100
+    }, 300);
+    e.preventDefault();
+});
+
+$(window).scroll(function() {
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+    var cur = scrollItems.map(function() {
+        if ($(this).offset().top - 100 < fromTop)
+            return this;
+    });
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        menuItems.removeClass("active")
+        menuItems.filter("[href='#" + id + "']").addClass("active");
+    } else {
+
+    }
+
+
+
     sticky_header();
     //Back to top
     if ($(this).scrollTop() > 50) {
@@ -341,4 +421,5 @@ jQuery(window).scroll(function() {
     } else {
         $('.cd-top').removeClass('cd-is-visible');
     }
+
 });

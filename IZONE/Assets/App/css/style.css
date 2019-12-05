@@ -2767,8 +2767,9 @@ ul.menu-step h3 {
 }
 .sidebar-sticky {
     position: sticky;
-    top: 104px;
+    top: 84px;
     margin-bottom: 24px;
+    z-index: 27;
 }
 .about-izone-post {
     max-width: 800px;
@@ -3115,4 +3116,114 @@ input[type="date"].use-placeholder:before {
     max-height: 250px;
     margin: 0 auto;
     display: block;
+}
+
+#market-statistics-nav .navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#market-statistics-nav .navbar ul li a {
+    color: var(--text-color);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: block;
+    border-bottom: 2px solid transparent;
+}
+
+#market-statistics-nav .navbar ul li a.active {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+#market-statistics-nav .navbar ul {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#market-statistics-nav .navbar ul li {
+    padding: 0 8px;
+}
+.bought-number {
+    font-weight: bold;
+    color: #69be35;
+}
+
+.loi-ich-khoa-hoc ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.loi-ich-khoa-hoc ul li {
+    width: 50%;
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    background-image: url(../images/benifit-icon.svg);
+    background-position: 0px 8px;
+    background-repeat: no-repeat;
+}
+
+.phu-hop-khoa-hoc ul li {
+    display: block;
+    position: relative;
+    padding: 2px 0;
+}
+
+.phu-hop-khoa-hoc ul li:before {content: "\2022";color: #8898aa !important;margin-right: 8px;}
+
+.chappter-lesson-count .collapse-up {
+    background: url(../images/arrow-up.svg) no-repeat center;
+}
+.chappter-lesson-count .collapse-down {
+    background: url(../images/arrow-down.svg) no-repeat center;
+}
+.chappter-lesson-count .collapse-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: 11px 7px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.curriculum-chapter {
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #dedfe0;
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.chappter-lesson .lesson-name-container img {
+    margin-right: 10px;
+}
+.chapter-lessons .separate-line {
+    width: 100%;
+    margin: 11px 0;
+    height: 2px;
+    background-color: #eaeaea;
+}
+.chapter-lessons .separate-line:last-child {
+    display: none;
+}
+.curriculum-chapter-container .chapter-lessons {
+    width: 100%;
+    border-radius: 7px;
+    padding: 21px 20px 21px;
+    background-color: #f4f7f8;
+}
+body .table-sosanh-phuongphap td, body .table-sosanh-phuongphap th {
+    padding: .5rem !important;
+    vertical-align: top !important;
+}
+.table-sosanh-phuongphap {
+    min-width: 450px;
 }

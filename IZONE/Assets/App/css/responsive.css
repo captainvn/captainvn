@@ -35,6 +35,9 @@
     .account-info:hover .account-menu { top: calc(100% + 2px); visibility: visible; opacity: 1; z-index: 27; }
 }
 @media(max-width:991px) {
+    .sidebar-sticky {
+        top: 70px;
+    }
     .theme-footer .top-footer-data-wrapper {
         padding-top: 60px;
         padding-bottom: 30px;
@@ -150,6 +153,17 @@
     #course-slider .owl-prev, #course-slider .owl-next {
         top: 150px;
     }
+    #market-statistics-nav .navbar ul {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    #market-statistics-nav .navbar ul li a {
+        white-space: nowrap;
+    }
+    #market-statistics-nav .navbar {
+        padding-right: 0;
+    }
 }
 @media(max-width:530px) {
 }
@@ -168,6 +182,9 @@
     }
     .col-botro li:nth-child(n+5) {
         display: none;
+    }
+    .loi-ich-khoa-hoc ul li {
+        width: 100%;
     }
 }
 @media(min-width:421px) {
