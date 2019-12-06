@@ -337,6 +337,7 @@ body .text-hover-main:hover{
 .w-400px{ width: 400px !important; }
 
 .min-w-0{ min-width: 0 !important; }
+.min-w-1{ min-width: 1px !important; }
 .min-w-25px{ min-width: 25px !important; }
 .min-w-50px{ min-width: 50px !important; }
 .min-w-75px{ min-width: 75px !important; }
@@ -449,6 +450,137 @@ body .text-hover-main:hover{
 .w-xl-400px{ width: 400px !important; }
 }
 
+
+.h-auto{ height: auto !important; }
+.h-25px{ height: 25px !important; }
+.h-50px{ height: 50px !important; }
+.h-75px{ height: 75px !important; }
+.h-100px{ height: 100px !important; }
+.h-125px{ height: 125px !important; }
+.h-150px{ height: 150px !important; }
+.h-175px{ height: 175px !important; }
+.h-200px{ height: 200px !important; }
+.h-225px{ height: 225px !important; }
+.h-250px{ height: 250px !important; }
+.h-275px{ height: 275px !important; }
+.h-300px{ height: 300px !important; }
+.h-325px{ height: 325px !important; }
+.h-350px{ height: 350px !important; }
+.h-375px{ height: 375px !important; }
+.h-400px{ height: 400px !important; }
+
+.min-h-0{ min-height: 0 !important; }
+.min-h-25px{ min-height: 25px !important; }
+.min-h-50px{ min-height: 50px !important; }
+.min-h-75px{ min-height: 75px !important; }
+.min-h-100px{ min-height: 100px !important; }
+.min-h-125px{ min-height: 125px !important; }
+.min-h-150px{ min-height: 150px !important; }
+.min-h-175px{ min-height: 175px !important; }
+.min-h-200px{ min-height: 200px !important; }
+.min-h-225px{ min-height: 225px !important; }
+.min-h-250px{ min-height: 250px !important; }
+.min-h-275px{ min-height: 275px !important; }
+.min-h-300px{ min-height: 300px !important; }
+.min-h-325px{ min-height: 325px !important; }
+.min-h-350px{ min-height: 350px !important; }
+.min-h-375px{ min-height: 375px !important; }
+.min-h-400px{ min-height: 400px !important; }
+
+.max-h-0{ max-height: 0 !important; }
+.max-h-25px{ max-height: 25px !important; }
+.max-h-50px{ max-height: 50px !important; }
+.max-h-75px{ max-height: 75px !important; }
+.max-h-100px{ max-height: 100px !important; }
+.max-h-125px{ max-height: 125px !important; }
+.max-h-150px{ max-height: 150px !important; }
+.max-h-175px{ max-height: 175px !important; }
+.max-h-200px{ max-height: 200px !important; }
+.max-h-225px{ max-height: 225px !important; }
+.max-h-250px{ max-height: 250px !important; }
+.max-h-275px{ max-height: 275px !important; }
+.max-h-300px{ max-height: 300px !important; }
+.max-h-325px{ max-height: 325px !important; }
+.max-h-350px{ max-height: 350px !important; }
+.max-h-375px{ max-height: 375px !important; }
+.max-h-400px{ max-height: 400px !important; }
+
+@media (min-height: 576px){
+.h-sm-auto{ height: auto !important; }
+.h-sm-25px{ height: 25px !important; }
+.h-sm-50px{ height: 50px !important; }
+.h-sm-75px{ height: 75px !important; }
+.h-sm-100px{ height: 100px !important; }
+.h-sm-125px{ height: 125px !important; }
+.h-sm-150px{ height: 150px !important; }
+.h-sm-175px{ height: 175px !important; }
+.h-sm-200px{ height: 200px !important; }
+.h-sm-225px{ height: 225px !important; }
+.h-sm-250px{ height: 250px !important; }
+.h-sm-275px{ height: 275px !important; }
+.h-sm-300px{ height: 300px !important; }
+.h-sm-325px{ height: 325px !important; }
+.h-sm-350px{ height: 350px !important; }
+.h-sm-375px{ height: 375px !important; }
+.h-sm-400px{ height: 400px !important; }
+}
+@media (min-height: 768px){
+.h-md-auto{ height: auto !important; }
+.h-md-25px{ height: 25px !important; }
+.h-md-50px{ height: 50px !important; }
+.h-md-75px{ height: 75px !important; }
+.h-md-100px{ height: 100px !important; }
+.h-md-125px{ height: 125px !important; }
+.h-md-150px{ height: 150px !important; }
+.h-md-175px{ height: 175px !important; }
+.h-md-200px{ height: 200px !important; }
+.h-md-225px{ height: 225px !important; }
+.h-md-250px{ height: 250px !important; }
+.h-md-275px{ height: 275px !important; }
+.h-md-300px{ height: 300px !important; }
+.h-md-325px{ height: 325px !important; }
+.h-md-350px{ height: 350px !important; }
+.h-md-375px{ height: 375px !important; }
+.h-md-400px{ height: 400px !important; }
+}
+@media (min-height: 992px){
+.h-lg-auto{ height: auto !important; }
+.h-lg-25px{ height: 25px !important; }
+.h-lg-50px{ height: 50px !important; }
+.h-lg-75px{ height: 75px !important; }
+.h-lg-100px{ height: 100px !important; }
+.h-lg-125px{ height: 125px !important; }
+.h-lg-150px{ height: 150px !important; }
+.h-lg-175px{ height: 175px !important; }
+.h-lg-200px{ height: 200px !important; }
+.h-lg-225px{ height: 225px !important; }
+.h-lg-250px{ height: 250px !important; }
+.h-lg-275px{ height: 275px !important; }
+.h-lg-300px{ height: 300px !important; }
+.h-lg-325px{ height: 325px !important; }
+.h-lg-350px{ height: 350px !important; }
+.h-lg-375px{ height: 375px !important; }
+.h-lg-400px{ height: 400px !important; }
+}
+@media (min-height: 1200px) {
+.h-xl-auto{ height: auto !important; }
+.h-xl-25px{ height: 25px !important; }
+.h-xl-50px{ height: 50px !important; }
+.h-xl-75px{ height: 75px !important; }
+.h-xl-100px{ height: 100px !important; }
+.h-xl-125px{ height: 125px !important; }
+.h-xl-150px{ height: 150px !important; }
+.h-xl-175px{ height: 175px !important; }
+.h-xl-200px{ height: 200px !important; }
+.h-xl-225px{ height: 225px !important; }
+.h-xl-250px{ height: 250px !important; }
+.h-xl-275px{ height: 275px !important; }
+.h-xl-300px{ height: 300px !important; }
+.h-xl-325px{ height: 325px !important; }
+.h-xl-350px{ height: 350px !important; }
+.h-xl-375px{ height: 375px !important; }
+.h-xl-400px{ height: 400px !important; }
+}
 /*BORDER RADIUS*/
 .border-radius,
 .radius-9999 {
@@ -2584,8 +2716,8 @@ body .col-botro li a:hover span{
 }
 .bg-reason-1 {
     background-image: url(../images/bg-reason-1.jpg);
-    background-size: contain;
-    background-position: top center;
+    background-size: 100% auto;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -3302,4 +3434,13 @@ body .table-sosanh-phuongphap td, body .table-sosanh-phuongphap th {
 
 .news-list .news-item .news-info a:hover {
     text-decoration: underline;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+}
+.text-hover-white:hover{
+    color: #fff !important;
+}
+.text-hover-main:hover{
+    color: var(--main-color) !important;
 }
