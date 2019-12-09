@@ -3444,3 +3444,13 @@ body .table-sosanh-phuongphap td, body .table-sosanh-phuongphap th {
 .text-hover-main:hover{
     color: var(--main-color) !important;
 }
+.custom-checkbox .custom-control-input~.custom-control-label{
+    height: auto;
+}
+.text-hover-underline:hover{
+    text-decoration: underline;
+}
+.custom-control-label::after,
+.custom-control-label::before {
+    top: 0.15rem;
+}
