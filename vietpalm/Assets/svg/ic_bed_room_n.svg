@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_10245" data-name="Group 10245" transform="translate(-1473 -121)">
+    <rect id="Base" width="30" height="30" transform="translate(1473 121)" fill="none"/>
+    <g id="bed" transform="translate(1480 43.006)">
+      <path id="Path_10258" data-name="Path 10258" d="M43.937,91.245a1.606,1.606,0,0,1,1.6-1.6h3.6a1.6,1.6,0,0,1,1.34.723,1.6,1.6,0,0,1,1.34-.723h3.6a1.606,1.606,0,0,1,1.6,1.6v.074h.4V89.755a1.763,1.763,0,0,0-1.761-1.761H45.3a1.763,1.763,0,0,0-1.761,1.761v1.564h.4v-.074Z" transform="translate(-42.007)" fill="#aaa"/>
+      <path id="Path_10259" data-name="Path 10259" d="M16.276,204.076H.674A.675.675,0,0,0,0,204.75v3.914a.675.675,0,0,0,.674.674H.955l-.332.936a.375.375,0,1,0,.706.25l.42-1.186H15.2l.42,1.186a.375.375,0,1,0,.706-.25L16,209.339h.281a.675.675,0,0,0,.674-.674V204.75A.675.675,0,0,0,16.276,204.076Z" transform="translate(0 -112.008)" fill="#aaa"/>
+      <path id="Path_10260" data-name="Path 10260" d="M256.118,156.262a.856.856,0,0,0-.855.855v.074h5.312v-.074a.856.856,0,0,0-.855-.855Z" transform="translate(-246.304 -65.872)" fill="#aaa"/>
+      <path id="Path_10261" data-name="Path 10261" d="M77.18,156.262a.856.856,0,0,0-.855.855v.074h5.312v-.074a.856.856,0,0,0-.855-.855Z" transform="translate(-73.646 -65.872)" fill="#aaa"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="255.502" height="244.673" viewBox="0 0 255.502 244.673">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #484848;
+        stroke-miterlimit: 10;
+        stroke-width: 8.818px;
+      }
+    </style>
+  </defs>
+  <g id="Group_3328" data-name="Group 3328" transform="translate(4.409 4.409)">
+    <path id="Path_10989" data-name="Path 10989" class="cls-1" d="M191.763,154.228,165.738,128.2c-4.567-4.567-11.462-5.076-15.4-1.138h0c-3.938,3.938-3.429,10.833,1.138,15.4l49.458,49.458c1.229,1.228,3.042,3.728,1.812,5.122-2.636,2.988-23.684-11.45-23.684-11.45-5.337-3.306-12.156-4.247-15.749,1.367-2.623,4.1-2.377,8.444,4.79,13.149,0,0,12.123,8.551,20.258,13.117,8.721,4.893,22.122,8.608,34.761,10.427,5.832.84,12.755,3.211,17.28,7.736l2.682,2.682" transform="translate(-87.618 -57.073)"/>
+    <path id="Path_10990" data-name="Path 10990" class="cls-1" d="M221.771,159.646l-17.714-17.713a7.6,7.6,0,0,0-10.749,0l-1.545,1.545a7.6,7.6,0,0,0,0,10.75l13.229,13.229" transform="translate(-87.618 -57.073)"/>
+    <path id="Path_10991" data-name="Path 10991" class="cls-1" d="M238.231,151.517l-17.469-17.469a7.6,7.6,0,0,0-10.749,0l-1.546,1.545a7.6,7.6,0,0,0,0,10.75" transform="translate(-87.618 -57.073)"/>
+    <path id="Path_10992" data-name="Path 10992" class="cls-1" d="M294.23,182.927l-57.313-57.314a7.6,7.6,0,0,0-10.75,0l-1.545,1.546a7.6,7.6,0,0,0,0,10.749" transform="translate(-87.618 -57.073)"/>
+    <rect id="Rectangle_9643" data-name="Rectangle 9643" class="cls-1" width="87.659" height="46.616" transform="translate(149.911 182.556) rotate(-45)"/>
+    <path id="Path_10993" data-name="Path 10993" class="cls-1" d="M247.732,249.832v43.1H87.618V57.073H207.362l40.37,41.3v38.06" transform="translate(-87.618 -57.073)"/>
+    <rect id="Rectangle_9644" data-name="Rectangle 9644" class="cls-1" width="27.578" height="27.578" transform="translate(23.936 30.177)"/>
+    <rect id="Rectangle_9645" data-name="Rectangle 9645" class="cls-1" width="27.578" height="27.578" transform="translate(23.936 105.628)"/>
+    <rect id="Rectangle_9646" data-name="Rectangle 9646" class="cls-1" width="27.578" height="27.578" transform="translate(23.936 181.078)"/>
+    <path id="Path_10994" data-name="Path 10994" class="cls-1" d="M207.362,57.073v41.3h40.37" transform="translate(-87.618 -57.073)"/>
+  </g>
+</svg>

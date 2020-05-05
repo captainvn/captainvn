@@ -1,0 +1,121 @@
+@media(min-width:1921px) {
+}
+@media(max-width:1920px) {
+}
+@media(min-width:1681px) {
+}
+@media(max-width:1680px) {
+}
+@media(max-width:1440px) {
+}
+@media (min-width:1200px) {
+}
+@media(max-width:1280px) {
+    .menu>ul>li>a { padding: 0 8px; font-size: 12px; }
+}
+@media(max-width:1200px) {
+
+}
+@media (min-width:992px) {
+    .cd-top {
+        height: 40px;
+        width: 40px;
+    }
+	.switch-lang {
+		position: absolute;
+	    top: 50%;
+	    right: 3em;
+	    margin-top: -19px;
+	}
+	.toggle-menu{
+		display: none;
+	}
+}
+@media(max-width:991px) {
+	.JOEWELL-logo img {
+	    max-height: 40px;
+	    max-width: 150px;
+	}
+    .header-center .menu {
+        display: none;
+    }
+	.toggle-menu {
+	    width: 115px;
+	}
+	.menu>ul>li {
+	    height: 70px;
+	}
+	.theme-footer .top-footer-data-wrapper {
+	    padding: 60px 0 30px;
+	}
+	.header-top {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 9000;
+	    width: 100%;
+	}
+	#page-wrapper {
+	    padding-top: 75px;
+	}
+}
+@media(min-width:768px) {
+
+}
+@media(max-width:767px) {
+	.lang-item img {
+	    margin-right: 0;
+	}
+	.lang-item span {
+	    display: none;
+	}
+	.switch-lang,
+	.switch-lang .dropdown-menu,
+	.toggle-menu {
+	    width: 38px !important;
+	    min-width: 38px !important;
+	}
+	.JOEWELL-logo img {
+	    max-height: 30px;
+	    max-width: 115px;
+	}
+	.news-item:first-child {
+	    padding-top: 1.5em;
+	}
+	.news-item {
+	    margin-bottom: 1.5em;
+	    padding-bottom: 1.5em;
+	}
+	#page-wrapper {
+	    padding-top: 50px;
+	}
+}
+@media(max-width:640px) {
+
+}
+@media (min-width:576px) {
+}
+@media (max-width:575px) {
+
+}
+@media(max-width:530px) {
+}
+@media(max-width:480px) {
+
+}
+@media(min-width:421px) {
+}
+@media(max-width:420px) {
+
+}
+@media(max-width:370px) {
+
+}
+@media(min-width:421px) and (max-width:575px) {
+
+}
+@media(min-width:641px) and (max-width:767px) {
+
+@media(min-width:1201px) and (max-width:1280px) {
+
+}
