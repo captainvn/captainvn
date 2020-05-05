@@ -853,7 +853,7 @@ article.post {
     margin: 0 7px 14px 7px;
     float: left;
 }
-.ad-area {
+.cust-banner-area {
     background-color: #fff;
     background-repeat: repeat-y;
     background-position: 25%;
@@ -862,7 +862,7 @@ article.post {
     font-size: 18px;
     text-align: center;
 }
-.ads-postpage {
+.banner-postpage {
     margin: 10px 0;
 }
 .ias-trigger-next:hover {
@@ -1238,7 +1238,7 @@ body.popular-users-page #primary {
     float: right;
     color: #555;
 }
-.sidebar-ad .ad-area {
+.sidebar-cust-banner .cust-banner-area {
     padding: 130px 30px;
 }
 .post-video #king-video.vjs-fullscreen,
