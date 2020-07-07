@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PhilTown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Go Stock" name="description" />
+    <meta content="Go Stock" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- jvectormap -->
+    <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/OwlCarousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/jquery-cscrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/OwlCarousel/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/libs/treegrid/css/jquery.treegrid.css" rel="stylesheet" />
+    <link href="assets/libs/amCharts/export.css" rel="stylesheet" />
+    <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/libs/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/jquery-toast/jquery.toast.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/cust1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/cust2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class=" left-side-menu-dark">
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                <li class="d-none d-sm-block cust-clock">
+                    <div>
+                        <i class="dripicons-clock text-muted"></i> <span class="text-dark mr-1 ml-1"><b>08:00</b></span> <span class="text-muted">11/11/2019</span>
+                    </div>
+                </li>
+                <li class="d-none d-sm-block">
+                    <a href="javascript:void(0);" class="nav-link ">
+                        <button type="button" class="btn btn-success btn-rounded waves-effect waves-light width-md"> <i class="fa fa-plus mr-1"></i> <span class="font-semibold">Hợp tác</span> </button>
+                    </a>
+                </li>
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle mr-0 waves-effect waves-light" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/flags/vietnam.svg" alt="user-image" height="24"> <span class="align-middle"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <img src="assets/images/flags/united-kingdom.svg" alt="user-image" class="mr-1" height="24"> <span class="align-middle">English</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown notification-list notification-are">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="mdi mdi-bell noti-icon text-muted"></i>
+                        <span class="badge badge-info noti-icon-badge">21</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0 d-flex">
+                                <form>
+                                    <ul class="nav nav-tabs nav-bordered nav-justified">
+                                        <li class="nav-item">
+                                            <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                Cơ bản
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                                Sự kiện
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                                Kỹ thuật
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="text-info nav-link">
+                                                Cài đặt
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </h5>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="home-b1">
+                                <div class="noti-slimscroll noti-scroll scrollbar-inner">
+                                    <!-- item-->
+                                    <a href="#" class="notify-item active">
+                                        <div class="notify-icon bg-secondary">STG</div>
+                                        <div class="noti-right">
+                                            <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="notify-item active">
+                                        <div class="notify-icon bg-secondary">STG</div>
+                                        <div class="noti-right">
+                                            <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="notify-item active">
+                                        <div class="notify-icon bg-secondary">STG</div>
+                                        <div class="noti-right">
+                                            <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="notify-item active">
+                                        <div class="notify-icon bg-secondary">STG</div>
+                                        <div class="noti-right">
+                                            <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="notify-item active">
+                                        <div class="notify-icon bg-secondary">STG</div>
+                                        <div class="noti-right">
+                                            <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile-b1">
+                                <!-- item-->
+                                <a href="#" class="notify-item active">
+                                    <div class="notify-icon bg-secondary">STG</div>
+                                    <div class="noti-right">
+                                        <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tab-pane" id="messages-b1">
+                                <!-- item-->
+                                <a href="#" class="notify-item active">
+                                    <div class="notify-icon bg-secondary">STG</div>
+                                    <div class="noti-right">
+                                        <p class="notify-details"><span>Bứt phá lợi nhuận (quý)</span><small class="text-muted">2 giờ trước</small></p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Có lợi nhuận tăng 52.25% trong Quý 3 2019</small>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
+                        <span class="pro-user-name ml-1 text-muted">
+                            Phạm Tiến Thành <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" data-toggle="modal" data-target="#user-info">
+                            <i class="dripicons-user"></i>
+                            <span>Thông tin tài khoản</span>
+                        </a>
+                        <!-- item-->
+                        <a href="17.Nâng cấp tài khoản.html" class="dropdown-item notify-item">
+                            <i class="dripicons-gear"></i>
+                            <span>Đăng ký và gia hạn dịch vụ</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <!-- item-->
+                        <a href="auth-login.html" class="dropdown-item notify-item">
+                            <i class="dripicons-power"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-left mb-0 d-flex">
+                <li class="float-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="22">
+                        </span>
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                        </span>
+                    </a>
+                </li>
+                <li class="float-left">
+                    <a class="button-menu-mobile navbar-toggle">
+                        <div class="lines">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.909" height="16.607" viewBox="0 0 24.909 16.607">
+                                <defs>
+                                    <style>
+                                    .menu-a {
+                                        fill: #677285;
+                                    }
+                                    </style>
+                                </defs>
+                                <g transform="translate(0 0)">
+                                    <path class="menu-a" d="M3.546,91.561H15.571a1.038,1.038,0,1,0,0-2.076H3.546l2.38-2.38a1.038,1.038,0,0,0-1.468-1.468L.306,89.789c-.024.024-.047.05-.069.076S.219,89.89.21,89.9s-.023.029-.033.045-.018.03-.027.045-.017.028-.025.042-.015.031-.023.047-.014.03-.021.045-.011.031-.017.047-.012.033-.017.049-.008.031-.012.047-.009.034-.013.051-.006.037-.008.055-.005.03-.007.045a1.044,1.044,0,0,0,0,.2c0,.015,0,.03.007.045s0,.037.008.055.008.034.013.051.007.032.012.047.011.033.017.049.011.031.017.047.014.03.021.045.014.032.023.047.016.028.025.042.018.031.027.045.022.03.033.045.018.025.028.037.044.052.068.076h0l4.152,4.152a1.038,1.038,0,1,0,1.468-1.468Z" transform="translate(-0.002 -85.334)" />
+                                    <path class="menu-a" d="M187.038,219.184c.01-.012.018-.025.028-.037s.022-.029.033-.044.018-.03.028-.045.017-.027.025-.042.015-.031.023-.047.014-.03.021-.045.011-.031.017-.047.012-.033.017-.049.008-.031.012-.047.009-.034.013-.051.006-.037.008-.055.005-.03.007-.045a1.047,1.047,0,0,0,0-.2c0-.015,0-.03-.007-.045s0-.037-.008-.055-.008-.034-.013-.051-.007-.032-.012-.047-.011-.033-.017-.049-.011-.031-.017-.047-.014-.03-.021-.045-.014-.032-.023-.047-.016-.028-.025-.042-.018-.031-.028-.045-.022-.03-.033-.044-.018-.025-.028-.037-.044-.051-.068-.075h0l-4.152-4.152a1.038,1.038,0,0,0-1.468,1.468l2.38,2.38H171.7a1.038,1.038,0,1,0,0,2.076H183.73l-2.38,2.38a1.038,1.038,0,0,0,1.468,1.468l4.152-4.152h0Q187.006,219.223,187.038,219.184Z" transform="translate(-162.364 -207.109)" />
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="float-left d-none d-md-block flex-grow-1">
+                    <div class="poit-scroll">
+                        <div class="poit-scroll-marquee">
+                            <marquee onmouseover="this.stop();" onmouseout="this.start();">
+                                <div class="poit-scroll-items">
+                                    <div class="poit-scroll-item d-flex align-items-center">
+                                        <span>VN-INDEX</span>
+                                        <div class="d-flex align-items-center poit-scroll-up">
+                                            <img src="assets/svg/point-up.svg" alt="Go Stock Poitn">
+                                            <span>234,43</span>
+                                        </div>
+                                        <div class="d-flex align-items-center poit-scroll-down">
+                                            <img src="assets/svg/point-down.svg" alt="Go Stock Poitn">
+                                            <span>2,43 %</span>
+                                        </div>
+                                    </div>
+                                    <div class="poit-scroll-item d-flex align-items-center">
+                                        <span>HN-INDEX</span>
+                                        <div class="d-flex align-items-center poit-scroll-up">
+                                            <img src="assets/svg/point-up.svg" alt="Go Stock Poitn">
+                                            <span>234,43</span>
+                                        </div>
+                                        <div class="d-flex align-items-center poit-scroll-down">
+                                            <img src="assets/svg/point-down.svg" alt="Go Stock Poitn">
+                                            <span>2,43 %</span>
+                                        </div>
+                                    </div>
+                                    <div class="poit-scroll-item d-flex align-items-center">
+                                        <span>QN-INDEX</span>
+                                        <div class="d-flex align-items-center poit-scroll-up">
+                                            <img src="assets/svg/point-up.svg" alt="Go Stock Poitn">
+                                            <span>234,43</span>
+                                        </div>
+                                        <div class="d-flex align-items-center poit-scroll-down">
+                                            <img src="assets/svg/point-down.svg" alt="Go Stock Poitn">
+                                            <span>2,43 %</span>
+                                        </div>
+                                    </div>
+                                    <div class="poit-scroll-item d-flex align-items-center">
+                                        <span>DN-INDEX</span>
+                                        <div class="d-flex align-items-center poit-scroll-up">
+                                            <img src="assets/svg/point-up.svg" alt="Go Stock Poitn">
+                                            <span>234,43</span>
+                                        </div>
+                                        <div class="d-flex align-items-center poit-scroll-down">
+                                            <img src="assets/svg/point-down.svg" alt="Go Stock Poitn">
+                                            <span>2,43 %</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </marquee>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end Topbar -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+            <div class="slimscroll-menu mm-show scrollbar-inner">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="mm-active">
+                    <ul class="metismenu mm-show" id="side-menu">
+                        <li>
+                            <a href="index.html">
+                                <img src="assets/svg/left-nav-1.svg" alt="left nav img">
+                                <span> Home <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="6.Thống kê thị trường.html">
+                                <img src="assets/svg/left-nav-2.svg" alt="left nav img">
+                                <span> Thống kê thị trường <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="7.Phân tích kỹ thuật.html">
+                                <img src="assets/svg/left-nav-3.svg" alt="left nav img">
+                                <span> Phân tích kỹ thuật <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="8.Tín hiệu và bộ lọc.html">
+                                <img src="assets/svg/left-nav-4.svg" alt="left nav img">
+                                <span> Tín hiệu và bộ lọc <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="9.Khuyến nghị của Gostock.html">
+                                <img src="assets/svg/left-nav-5.svg" alt="left nav img">
+                                <span> Khuyến nghị của Gostock <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10.Quản trị danh mục.html">
+                                <img src="assets/svg/left-nav-6.svg" alt="left nav img">
+                                <span> Quản trị danh mục <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li class="mm-active">
+                            <a href="javascript:void(0);" class="active">
+                                <img src="assets/svg/left-nav-7.svg" alt="left nav img">
+                                <span> Công cụ hỗ trợ PTCB <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="11.Bộ lọc.html">Bộ lọc <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></a>
+                                </li>
+                                <li>
+                                    <a href="12.PhilTown.html" class="active">Phương pháp 4M – Phil Town <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></a>
+                                </li>
+                                <li>
+                                    <a href="13.Chi tiết BCTC và biểu đồ.html">Chi tiết BCTC và biểu đồ <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="14.Tạo Báo Cáo.html">
+                                <img src="assets/svg/left-nav-8.svg" alt="left nav img">
+                                <span> Tạo Báo Cáo <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="15.Hướng dẫn sử dụng.html">
+                                <img src="assets/svg/left-nav-9.svg" alt="left nav img">
+                                <span> Hướng dẫn sử dụng <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="17.Nâng cấp tài khoản.html">
+                                <img src="assets/svg/left-nav-10.svg" alt="left nav img">
+                                <span> Nâng cấp tài khoản <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="16.About Gostock.html">
+                                <img src="assets/svg/left-nav-11.svg" alt="left nav img">
+                                <span> About Gostock <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com/gostock" target="_blank">
+                                <img src="assets/svg/left-nav-12.svg" alt="left nav img">
+                                <span> Cộng đồng <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Góp ý.html">
+                                <img src="assets/svg/left-nav-13.svg" alt="left nav img">
+                                <span> Góp ý <b class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></b></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Sidebar -->
+            </div>
+            <!-- Sidebar -left -->
+            <div class="sidebar-fixBtn">
+                <a href="Hợp tác với chúng tôi.html">
+                    <i class="fa fa-plus mr-1"></i> <span> Hợp tác với chúng tôi </span>
+                </a>
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <div class="content py-3">
+                <!-- Start Content-->
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4 class="mb-2 d-flex">Các mã cần quan tâm
+                        </h4>
+                        <div class="table-responsive">
+                            <div class="tb-slimscroll scrollbar-inner tb-slimscroll-getNews">
+                                <style type="text/css" media="screen">
+                                .tb-slimscroll-getNews {
+                                    max-height: 175px;
+                                }
+                                </style>
+                                <table class="table table-dark table-bordered mb-0 gs-table table-xs vertical-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-light text-center" rowspan="2">STT</th>
+                                            <th class="bg-light text-center" rowspan="2">Mã chứng khoán</th>
+                                            <th class="bg-light text-center">Meaning<br><small>(Ý nghĩa)</small></th>
+                                            <th class="bg-light text-center">Moat<br><small>(Lợi thế cạnh tranh)</small></th>
+                                            <th class="bg-light text-center">Financial<br><small>(Tài chính)</small></th>
+                                            <th class="bg-light text-center">Management<br><small>(Ban lãnh đạo)</small></th>
+                                            <th class="bg-light text-center" colspan="3">Margin of safety<br><small>(Biên an toàn)</small></th>
+                                            <th class="bg-light text-center" rowspan="2">Tổng điểm đánh giá</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg-light text-muted text-center fs-12">Điểm đánh giá</th>
+                                            <th class="bg-light text-muted text-center fs-12">Điểm đánh giá</th>
+                                            <th class="bg-light text-muted text-center fs-12">Điểm đánh giá</th>
+                                            <th class="bg-light text-muted text-center fs-12">Điểm đánh giá</th>
+                                            <th class="bg-light text-muted text-center fs-12">Điểm đánh giá</th>
+                                            <th class="bg-light text-muted text-center fs-12">Giá trị nội tại</th>
+                                            <th class="bg-light text-muted text-center fs-12">Giá trị trả giá</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">HPG</td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">20 - 30</td>
+                                            <td class="text-center">50</td>
+                                            <td class="text-center">80</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-center">ACB</td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">20 - 30</td>
+                                            <td class="text-center">50</td>
+                                            <td class="text-center">80</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="text-center">NKG</td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">20 - 30</td>
+                                            <td class="text-center">50</td>
+                                            <td class="text-center">80</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="mb-2 d-flex target-scroll align-items-center justify-content-between">
+                            <div>
+                                Các con số của Phil Town
+                            </div>
+                            <div class="ml-3">
+                                <div class="input-group input-group-sm stock-search cust-search-style">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id=""><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Chọn mã cổ phiếu" aria-label="">
+                                </div>
+                            </div>
+                        </h4>
+                        <div class="table-responsive">
+                            <div class="tb-slimscroll scrollbar-inner">
+                                <table class="table table-dark table-bordered mb-0 gs-table table-xs vertical-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-light w-auto mw-200px">Moat - Lợi thế cạnh tranh</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">10 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">7 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">5 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">3 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">1 năm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--
+                                            Màu của các chữ sẽ chuyển theo giá của chứng khoán:
+                                            - xanh lá:
+                                                        dùng class: text-success cho chữ
+                                                                    bg-success cho nền
+                                            - đỏ:
+                                                        dùng class: text-danger cho chữ
+                                                                    bg-danger cho nền
+                                            - vàng cam:
+                                                        dùng class: text-warning cho chữ
+                                                                    bg-warning cho nền
+                                        -->
+                                        <tr>
+                                            <td class="">ROIC</td>
+                                            <td class="text-center bg-success">29%</td>
+                                            <td class="text-center bg-success">21%</td>
+                                            <td class="text-center bg-warning">9%</td>
+                                            <td class="text-center bg-success">13%</td>
+                                            <td class="text-center bg-success">12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng bình quân VCSH</td>
+                                            <td class="text-center bg-success">30%</td>
+                                            <td class="text-center bg-success">19.4%</td>
+                                            <td class="text-center bg-danger">3%</td>
+                                            <td class="text-center bg-warning">7.1%</td>
+                                            <td class="text-center bg-danger">5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng bình quân doanh thu</td>
+                                            <td class="text-center bg-success">27%</td>
+                                            <td class="text-center bg-success">19.2%</td>
+                                            <td class="text-center bg-danger">5%</td>
+                                            <td class="text-center bg-danger">2%</td>
+                                            <td class="text-center bg-danger">-3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng bình quân EPS</td>
+                                            <td class="text-center bg-success">25%</td>
+                                            <td class="text-center bg-success">19.7%</td>
+                                            <td class="text-center bg-warning">7.9%</td>
+                                            <td class="text-center bg-warning">7.8%</td>
+                                            <td class="text-center bg-warning">6%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng bình quân FCF</td>
+                                            <td class="text-center bg-success">25%</td>
+                                            <td class="text-center bg-success">19.7%</td>
+                                            <td class="text-center bg-warning">7.9%</td>
+                                            <td class="text-center bg-warning">7.8%</td>
+                                            <td class="text-center bg-warning">6%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="my-2">
+                            <a href="#" class="text-muted link-to-show text-underline text-hover-info" data-target="#table-double-moat" data-more="Xem thêm" data-less="Thu gọn"><span class="link-to-show-txt">Xem thêm</span> - Tốc độ tăng trưởng kép các chỉ số của lợi thế cạnh tranh <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title='<em>Giải thích ý nghĩa</em>'></i></a>
+                        </p>
+                        <div class="table-responsive" id="table-double-moat" style="display: none">
+                            <div class="tb-slimscroll scrollbar-inner">
+                                <table class="table table-bordered mb-2 gs-table table-xs vertical-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-light w-auto mw-200px">Moat - Lợi thế cạnh tranh</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">10 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">7 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">5 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">3 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">1 năm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--
+                                            Màu của các chữ sẽ chuyển theo giá của chứng khoán:
+                                            - xanh lá:
+                                                        dùng class: text-success cho chữ
+                                                                    bg-success cho nền
+                                            - đỏ:
+                                                        dùng class: text-danger cho chữ
+                                                                    bg-danger cho nền
+                                            - vàng cam:
+                                                        dùng class: text-warning cho chữ
+                                                                    bg-warning cho nền
+                                        -->
+                                        <tr>
+                                            <td class="">ROIC</td>
+                                            <td class="text-center bg-success">29%</td>
+                                            <td class="text-center bg-success">21%</td>
+                                            <td class="text-center bg-warning">9%</td>
+                                            <td class="text-center bg-success">13%</td>
+                                            <td class="text-center bg-success">12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng kép VCSH</td>
+                                            <td class="text-center bg-success">30%</td>
+                                            <td class="text-center bg-success">19.4%</td>
+                                            <td class="text-center bg-danger">3%</td>
+                                            <td class="text-center bg-warning">7.1%</td>
+                                            <td class="text-center bg-danger">5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng kép doanh thu</td>
+                                            <td class="text-center bg-success">27%</td>
+                                            <td class="text-center bg-success">19.2%</td>
+                                            <td class="text-center bg-danger">5%</td>
+                                            <td class="text-center bg-danger">2%</td>
+                                            <td class="text-center bg-danger">-3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng kép EPS</td>
+                                            <td class="text-center bg-success">25%</td>
+                                            <td class="text-center bg-success">19.7%</td>
+                                            <td class="text-center bg-warning">7.9%</td>
+                                            <td class="text-center bg-warning">7.8%</td>
+                                            <td class="text-center bg-warning">6%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng kép FCF</td>
+                                            <td class="text-center bg-success">25%</td>
+                                            <td class="text-center bg-success">19.7%</td>
+                                            <td class="text-center bg-warning">7.9%</td>
+                                            <td class="text-center bg-warning">7.8%</td>
+                                            <td class="text-center bg-warning">6%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="table-responsive">
+                            <div class="tb-slimscroll scrollbar-inner">
+                                <table class="table table-dark table-bordered mb-3 gs-table table-xs vertical-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-light w-auto mw-200px">Financial - Tình hình tài chính</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">10 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">7 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">5 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">3 năm</th>
+                                            <th class="bg-light w-100px w-md-150px w-lg-200px text-center">1 năm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="">Nợ phải trả/VCSH</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">FCF/Nợ vay dài hạn</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">EBIT/Lãi vay</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <div class="tb-slimscroll scrollbar-inner">
+                                <table class="table table-dark table-bordered mb-0 gs-table table-xs vertical-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-light">Chi tiết các chỉ số</th>
+                                            <th class="bg-light text-center">2019</th>
+                                            <th class="bg-light text-center">2018</th>
+                                            <th class="bg-light text-center">2017</th>
+                                            <th class="bg-light text-center">2016</th>
+                                            <th class="bg-light text-center">2015</th>
+                                            <th class="bg-light text-center">2014</th>
+                                            <th class="bg-light text-center">2013</th>
+                                            <th class="bg-light text-center">2012</th>
+                                            <th class="bg-light text-center">2011</th>
+                                            <th class="bg-light text-center">2010</th>
+                                            <th class="bg-light text-center">2009</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="">ROIC</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng VCSH</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng doanh thu</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng EPS</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Tăng trưởng FCF</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Nợ phải trả/VCSH</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">FCF/Nợ vay dài hạn</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">EBIT/Lãi vay</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="mb-2 d-flex">Biên an toàn
+                        </h4>
+                        <div class="row">
+                            <div class="col-12 col-lg-5">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">EPS năm gần nhất</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="" placeholder="Nhập giá trị">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Tốc độ tăng trưởng vốn chủ sở hữu ước tính</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="" placeholder="Nhập giá trị">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">EPS 10 năm tới</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="22" disabled="disabled">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">P/E 10 năm tới</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="11">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Giá trị nội tại cổ phiếu 10 năm tới</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="12" disabled="disabled">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Tỉ lệ sinh lời yêu cầu</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="32">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Giá trị nội tại cổ phiếu hiện tại</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="24" disabled="disabled">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Biên an toàn</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="15">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row d-flex mb-2">
+                                                <label class="col col-form-label" for="">Giá trị trả giá</label>
+                                                <div class="d-flex align-items-center w-125px">
+                                                    <input type="text" class="form-control form-control-sm text-right" id="" value="31" disabled="disabled">
+                                                    <i class="fa fa-info-circle ml-1 fs-13 icon-info" aria-hidden="true" data-toggle="tooltip" data-html="true" title="" data-original-title="<em>Giải thích ý nghĩa</em>"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <div class="philtown_chart_parent w-100 h-100">
+                                            <div id="philtown_chart">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- container -->
+                </div> <!-- content -->
+                <!-- sample modal content -->
+                <div id="user-info" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center flex-grow-1" id="">Thông tin tài khoản</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="img-thumbnail avatar-xl rounded-circle">
+                                </div>
+                                <h4 class="text-uppercase text-center my-2">Phạm Tiến Thành</h4>
+                                <hr>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    <span>Gói Basic</span>
+                                    <a class="btn btn-icon btn-rounded btn-light waves-effect waves-light" href="#" data-toggle="modal" data-target="#user-update"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                </p>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    <span>Thời gian sử dụng: 01/01/2019 - 01/01/2020</span>
+                                    <a class="btn btn-icon btn-rounded btn-light waves-effect waves-light" href="Nâng cấp tài khoản.html"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Đóng</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- sample modal content -->
+                <div id="user-update" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center flex-grow-1" id="">Nâng cấp tài khoản</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" class="pt-2">
+                                    <div class="form-group mb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="firstname">Tên</label>
+                                                <input class="form-control" type="text" id="firstname" placeholder="Tên" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="lastname">Họ</label>
+                                                <input class="form-control" type="text" id="lastname" placeholder="Họ" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="birthday">Ngày sinh</label>
+                                        <input class="form-control" type="date" id="birthday" required placeholder="Ngày sinh">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="emailaddress">Email</label>
+                                        <input class="form-control" type="email" id="emailaddress" required placeholder="Email">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="address">Địa chỉ</label>
+                                        <input class="form-control" type="text" required id="address" placeholder="Địa chỉ">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="add-1">Quận</label>
+                                                <input class="form-control" type="text" id="add-1" placeholder="Quận" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="add-2">Thành phố/Tỉnh</label>
+                                                <input class="form-control" type="text" id="add-2" placeholder="Thành phố/Tỉnh" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="country">Quốc gia</label>
+                                                <input class="form-control" type="text" id="country" placeholder="Quốc gia" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="tel">Số điện thoại</label>
+                                        <input class="form-control" type="tel" required id="tel" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-success btn-block" type="submit"> Cập nhật </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Đóng</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto text-center text-sm-left mb-2 mb-sm-0">
+                                <span class="text-muted">© 2019</span> <a href="javascript:void(0);" class="font-bold text-info">Go Stock</a>
+                            </div>
+                            <div class="col-12 col-sm-auto text-right flex-grow-1">
+                                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-end">
+                                    <a href="mailto:support@gostock.com" class="mr-3 text-muted mb-2 mb-sm-0"><i class="fa fa-envelope" aria-hidden="true"></i> support@gostock.com</a>
+                                    <a href="tel:+8424312502" class="mr-3 text-muted mb-2 mb-sm-0"><i class="fa fa-phone" aria-hidden="true"></i> +84(24) 312 502</a>
+                                    <div class="d-flex align-items-center mb-2 mb-sm-0">
+                                        <a href="#" class="mr-2 text-muted"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="mr-2 text-muted"><i class="fa fa-google" aria-hidden="true"></i></a>
+                                        <a href="#" class="mr-0 text-muted"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.js"></script>
+        <script src="assets/libs/highstock/highstock.js"></script>
+        <script src="assets/libs/highstock/modules/treemap.js"></script>
+        <!-- amcharts -->
+        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="assets/libs/amCharts/amcharts.js"></script>
+        <script src="assets/libs/amCharts/serial.js"></script>
+        <script src="assets/libs/amCharts/pie.js"></script>
+        <script src="assets/libs/amCharts/amstock.js"></script>
+        <script src="assets/libs/amCharts/export.min.js"></script>
+        <script src="assets/libs/amCharts/light.js"></script>
+        <script src="assets/libs/amCharts/dark.js"></script>
+        <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/libs/treegrid/js/jquery.treegrid.min.js"></script>
+        <script src="assets/libs/OwlCarousel/owl.carousel.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-cscrollbar/jquery.scrollbar.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/libs/switchery/switchery.min.js"></script>
+        <script src="assets/libs/ion-rangeslider/ion.rangeSlider.min.js"></script>
+        <script src="assets/libs/jquery-toast/jquery.toast.min.js"></script>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/lightweight-charts@1.0.0/dist/lightweight-charts.standalone.production.js"></script>
+        <!-- Dashboard Init JS -->
+        <script src="assets/js/pages/dashboard.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/cust1.js"></script>
+        <script src="assets/js/cust2.js"></script>
+</body>
+
+</html>

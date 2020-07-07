@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Đăng ký</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Go Stock" name="description" />
+        <meta content="Go Stock" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/OwlCarousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/jquery-cscrollbar/jquery.cscrollbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/OwlCarousel/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/libs/treegrid/css/jquery.treegrid.css" rel="stylesheet" />
+    <link href="assets/libs/amCharts/export.css" rel="stylesheet" />
+    <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/libs/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/jquery-toast/jquery.toast.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/cust1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/cust2.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body class=" authentication-bg authentication-bg-pattern d-flex align-items-center authentication-page">
+
+        <div class="account-pages w-100 py-5">
+             <div class="container-fluid">
+                <div class="row d-flex justify-content-center flex-row auth-cust-bg">
+                    <div class="col auth-cust-bg-left"><img src="assets/images/gs-left.png"></div>
+                    <div class="col">
+                        <a href="index.html" class="logo bg-transparent d-flex justify-content-center ml-auto mr-auto mb-2">
+                            <span class="logo-auth">
+                                <img src="assets/images/logo-dark.png" alt="" height="22">
+                            </span>
+                        </a>
+                        <div class="card">
+
+                            <div class="card-body p-4">
+
+                                <div class="text-center mb-4">
+                                    <h4 class="text-uppercase mt-3">Đăng ký tài khoản mới</h4>
+                                </div>
+
+                                <form action="#" class="pt-2">
+
+                                    <div class="form-group mb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="firstname">Tên</label>
+                                                <input class="form-control" type="text" id="firstname" placeholder="Tên" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="lastname">Họ</label>
+                                                <input class="form-control" type="text" id="lastname" placeholder="Họ" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="birthday">Ngày sinh</label>
+                                        <input class="form-control" type="date" id="birthday" required placeholder="Ngày sinh">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="emailaddress">Email</label>
+                                        <input class="form-control" type="email" id="emailaddress" required placeholder="Email">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="emailconfirm">Xác nhận email</label>
+                                        <input class="form-control" type="email" id="emailconfirm" required placeholder="Xác nhận email">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="password">Mật khẩu</label>
+                                        <input class="form-control" type="password" required id="password" placeholder="Mật khẩu">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="passwordconfirm">Xác nhận mật khẩu</label>
+                                        <input class="form-control" type="password" required id="passwordconfirm" placeholder="Xác nhận mật khẩu">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="address">Địa chỉ</label>
+                                        <input class="form-control" type="text" required id="address" placeholder="Địa chỉ">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="add-1">Quận</label>
+                                                <input class="form-control" type="text" id="add-1" placeholder="Quận" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="add-2">Thành phố/Tỉnh</label>
+                                                <input class="form-control" type="text" id="add-2" placeholder="Thành phố/Tỉnh" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="country">Quốc gia</label>
+                                                <input class="form-control" type="text" id="country" placeholder="Quốc gia" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="tel">Số điện thoại</label>
+                                        <input class="form-control" type="tel" required id="tel" placeholder="Số điện thoại">
+                                    </div>
+
+                                    <div class="checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-signup">
+                                        <label class="custom-control-label" for="checkbox-signup">Tôi đồng ý với những <a href="javascript: void(0);" class="text-info text-underline"><b>Điều khoản</b></a> và <a href="javascript: void(0);" class="text-info text-underline"><b>điều kiện sử dụng</b></a> cũng như <a href="javascript: void(0);" class="text-info text-underline"><b>Chính sách quyền riêng tư</b></a> của GoStock</label>
+                                    </div>
+
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-success btn-block" type="submit"> Xác nhận </button>
+                                    </div>
+
+                                </form>
+
+                                <div class="row mt-3">
+                                    <div class="col-12 text-center">
+                                        <p class="mb-0">Bạn đã có tài khoản?  <a href="auth-login.html" class="text-dark ml-1"><b>Đăng nhập</b></a></p>
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
+
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                    </div> <!-- end col -->
+                    <div class="col auth-cust-bg-right"><img src="assets/images/auth-right.png"></div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+    <script src="assets/libs/highstock/highstock.js"></script>
+    <script src="assets/libs/highstock/modules/treemap.js"></script>
+    <!-- amcharts -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/libs/amCharts/amcharts.js"></script>
+    <script src="assets/libs/amCharts/serial.js"></script>
+    <script src="assets/libs/amCharts/pie.js"></script>
+    <script src="assets/libs/amCharts/amstock.js"></script>
+    <script src="assets/libs/amCharts/export.min.js"></script>
+    <script src="assets/libs/amCharts/light.js"></script>
+    <script src="assets/libs/amCharts/dark.js"></script>
+    <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/libs/treegrid/js/jquery.treegrid.min.js"></script>
+        <script src="assets/libs/OwlCarousel/owl.carousel.js" type="text/javascript"></script>
+    <script src="assets/libs/jquery-cscrollbar/jquery.cscrollbar.js" type="text/javascript"></script>
+
+
+
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/cust1.js"></script>
+        <script src="assets/js/cust2.js"></script>
+
+    </body>
+</html>
